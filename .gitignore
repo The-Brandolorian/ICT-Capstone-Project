@@ -70,3 +70,35 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Textures/Concrete.meta
+Assets/Textures/Concrete/Concrete030_8K-JPG_AmbientOcclusion.jpg
+Assets/Textures/Concrete/Concrete030_8K-JPG_AmbientOcclusion.jpg.meta
+Assets/Textures/Concrete/Concrete030_8K-JPG_Color.jpg
+Assets/Textures/Concrete/Concrete030_8K-JPG_Color.jpg.meta
+Assets/Textures/Concrete/Concrete030_8K-JPG_Displacement.jpg
+Assets/Textures/Concrete/Concrete030_8K-JPG_Displacement.jpg.meta
+Assets/Textures/Concrete/Concrete030_8K-JPG_NormalDX.jpg
+Assets/Textures/Concrete/Concrete030_8K-JPG_NormalDX.jpg.meta
+Assets/Textures/Concrete/Concrete030_8K-JPG_Roughness.jpg
+Assets/Textures/Concrete/Concrete030_8K-JPG_Roughness.jpg.meta
+Assets/Textures/concrete_layers_02_diff_8k.jpg
+Assets/Textures/concrete_layers_02_diff_8k.jpg.meta
+Assets/Textures/concrete_layers_02_nor_gl_8k.exr
+Assets/Textures/concrete_layers_02_nor_gl_8k.exr.meta
+Assets/Textures/Glass Building.meta
+Assets/Textures/Glass Building/Facade001.png
+Assets/Textures/Glass Building/Facade001.png.meta
+Assets/Textures/Glass Building/Facade001_4K-JPG_Color.jpg
+Assets/Textures/Glass Building/Facade001_4K-JPG_Color.jpg.meta
+Assets/Textures/Glass Building/Facade001_4K-JPG_Displacement.jpg
+Assets/Textures/Glass Building/Facade001_4K-JPG_Displacement.jpg.meta
+Assets/Textures/Glass Building/Facade001_4K-JPG_Metalness.jpg
+Assets/Textures/Glass Building/Facade001_4K-JPG_Metalness.jpg.meta
+Assets/Textures/Glass Building/Facade001_4K-JPG_NormalDX.jpg
+Assets/Textures/Glass Building/Facade001_4K-JPG_NormalDX.jpg.meta
+Assets/Textures/Glass Building/Facade001_4K-JPG_NormalGL.jpg
+Assets/Textures/Glass Building/Facade001_4K-JPG_NormalGL.jpg.meta
+Assets/Textures/Glass Building/Facade001_4K-JPG_Roughness.jpg
+Assets/Textures/Glass Building/Facade001_4K-JPG_Roughness.jpg.meta
+Assets/Textures/Glass Building/New Material.mat
+Assets/Textures/Glass Building/New Material.mat.meta
