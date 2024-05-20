@@ -102,3 +102,70 @@ Assets/Textures/Glass Building/Facade001_4K-JPG_Roughness.jpg
 Assets/Textures/Glass Building/Facade001_4K-JPG_Roughness.jpg.meta
 Assets/Textures/Glass Building/New Material.mat
 Assets/Textures/Glass Building/New Material.mat.meta
+Assets/Textures/Bricks.meta
+Assets/Textures/Bricks/Brick.mat
+Assets/Textures/Bricks/Brick.mat.meta
+Assets/Textures/Bricks/Bricks060.png
+Assets/Textures/Bricks/Bricks060.png.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG.mtlx
+Assets/Textures/Bricks/Bricks060_4K-PNG.mtlx.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG.usdc
+Assets/Textures/Bricks/Bricks060_4K-PNG.usdc.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG_AmbientOcclusion.png
+Assets/Textures/Bricks/Bricks060_4K-PNG_AmbientOcclusion.png.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG_Color.png
+Assets/Textures/Bricks/Bricks060_4K-PNG_Color.png.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG_Displacement.png
+Assets/Textures/Bricks/Bricks060_4K-PNG_Displacement.png.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG_NormalDX.png
+Assets/Textures/Bricks/Bricks060_4K-PNG_NormalDX.png.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG_NormalGL.png
+Assets/Textures/Bricks/Bricks060_4K-PNG_NormalGL.png.meta
+Assets/Textures/Bricks/Bricks060_4K-PNG_Roughness.png
+Assets/Textures/Bricks/Bricks060_4K-PNG_Roughness.png.meta
+Assets/Textures/Concrete Layer.terrainlayer
+Assets/Textures/Concrete Layer.terrainlayer.meta
+Assets/Textures/Concrete.terrainlayer
+Assets/Textures/Concrete.terrainlayer.meta
+Assets/Textures/Corrugated Steel.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG.mtlx
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG.mtlx.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG.usdc
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG.usdc.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_AmbientOcclusion.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_AmbientOcclusion.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Color.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Color.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Displacement.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Displacement.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Metalness.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Metalness.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_NormalDX.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_NormalDX.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_NormalGL.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_NormalGL.png.meta
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Roughness.png
+Assets/Textures/Corrugated Steel/CorrugatedSteel007A_4K-PNG_Roughness.png.meta
+Assets/Textures/Roofing Tiles.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG.mtlx
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG.mtlx.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG.usdc
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG.usdc.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_AmbientOcclusion.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_AmbientOcclusion.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Color.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Color.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Displacement.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Displacement.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_NormalDX.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_NormalDX.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_NormalGL.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_NormalGL.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Opacity.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Opacity.png.meta
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Roughness.png
+Assets/Textures/Roofing Tiles/RoofingTiles015A_4K-PNG_Roughness.png.meta
