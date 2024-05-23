@@ -9,6 +9,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private bool bEngineIsOn = false;
     [SerializeField] private bool bLightsAreOn = false;
     [SerializeField] private bool bSoundingHorn = false;
+    [SerializeField] private bool bIsBreaking = false;
     [SerializeField] private bool bForcedBraking = false;
     [SerializeField] private bool bDevMode = false;
 
@@ -26,9 +27,16 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private float brakingFactor = 0.05f;
     [SerializeField] private float gravityBreakingFactor = 0.05f;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioClip hornSoundClip;
+    [SerializeField] private AudioClip engineSoundClip;
+    [SerializeField] private AudioClip breakingSoundClip;
+    [SerializeField] private AudioClip railSoundClip;
+
     private float startingAcceleration;
     private float startingBrakingSpeed;
     private Light[] lights;
+    private float hornWaitTime;
 
     // Start is called before the first frame update
     private void Start()
@@ -68,7 +76,7 @@ public class PlayerControls : MonoBehaviour
         // system controls
         if (Input.GetKeyDown(KeyCode.E)) ToggleEngine();
         if (Input.GetKeyDown(KeyCode.L)) ToggleLights();
-        if (Input.GetKeyDown(KeyCode.H)) ToggleHorn();
+        if (Input.GetKeyDown(KeyCode.H)) SoundHorn();
         if (Input.GetKeyDown(KeyCode.R)) Reset();
 
         // dev controls
@@ -81,6 +89,14 @@ public class PlayerControls : MonoBehaviour
 
             acceleration = Mathf.Min(acceleration + startingAcceleration * accelerationFactor, maximumAcceleration);
             speed = Mathf.Min(speed + acceleration * Time.deltaTime, maximumSpeed);
+
+            if (SoundManager.instance.GetLoopingSoundClip("rail") == null) SoundManager.instance.PlayLoopingSoundClip("rail", railSoundClip, transform, true, 0.5f, 0.25f);
+
+            AudioSource engineSource = SoundManager.instance.GetLoopingSoundClip("engine");
+            engineSource.volume = Mathf.Min(engineSource.volume + speed / 100, 0.6f);
+
+            AudioSource railSource = SoundManager.instance.GetLoopingSoundClip("rail");
+            railSource.volume = Mathf.Min(railSource.volume + speed / 100, 1f);
         }
 
         if (Input.GetKey(KeyCode.S) || bForcedBraking)
@@ -89,13 +105,30 @@ public class PlayerControls : MonoBehaviour
 
             brakingSpeed = Mathf.Min(brakingSpeed + startingBrakingSpeed * brakingFactor, maximumBrakingSpeed);
             speed = Mathf.Max(speed - brakingSpeed * Time.deltaTime, 0);
+
+            if (!bIsBreaking)
+            {
+                SoundManager.instance.PlaySoundClip(breakingSoundClip, transform, true, 0.7f);
+                bIsBreaking = !bIsBreaking;
+            }
+
+            AudioSource source = SoundManager.instance.GetLoopingSoundClip("engine");
+            source.volume = Mathf.Max(source.volume - speed / 75, 0.25f);
+
+            AudioSource railSource = SoundManager.instance.GetLoopingSoundClip("rail");
+            railSource.volume = Mathf.Min(railSource.volume - speed / 100, 1f);
         }
     }
 
     private void ToggleEngine()
     {
         bEngineIsOn = !bEngineIsOn;
-        // todo play sound
+
+        if (bEngineIsOn)
+            SoundManager.instance.PlayLoopingSoundClip("engine", engineSoundClip, transform, true, 1f, 0.25f);
+
+        else
+            SoundManager.instance.StopLoopingSoundClip("engine", true, 0.7f);
     }
 
     private void ToggleLights()
@@ -108,10 +141,13 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    private void ToggleHorn()
+    private void SoundHorn()
     {
-        bSoundingHorn = !bSoundingHorn;
-        // todo play sound
+        if(hornWaitTime < Time.time)
+        { 
+            hornWaitTime = Time.time + hornSoundClip.length;
+            SoundManager.instance.PlaySoundClip(hornSoundClip, transform, true, 0.7f);
+        }
     }
 
     private void ToggleForcedBraking()
@@ -123,7 +159,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (bEngineIsOn) ToggleEngine();
         if (bLightsAreOn) ToggleLights();
-        if (bSoundingHorn) ToggleHorn();
+        if (bSoundingHorn) SoundHorn();
         if (bForcedBraking) ToggleForcedBraking();
 
         spline.ElapsedTime = 0;

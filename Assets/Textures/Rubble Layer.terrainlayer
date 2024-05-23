@@ -9,7 +9,7 @@ TerrainLayer:
   m_Name: Rubble Layer
   m_DiffuseTexture: {fileID: 2800000, guid: e0130ea6750958d4983e630950255590, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: a46b56adcd54b4b4989b62b29bcdf6b8, type: 3}
-  m_MaskMapTexture: {fileID: 0}
+  m_MaskMapTexture: {fileID: 2800000, guid: 0dff9931bdd6cfe4192b9e77667554ba, type: 3}
   m_TileSize: {x: 5, y: 5}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
