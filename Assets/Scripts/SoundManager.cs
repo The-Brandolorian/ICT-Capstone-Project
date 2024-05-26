@@ -8,11 +8,11 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance;
 
     [SerializeField] private AudioSource soundObject;
-    [SerializeField] private Dictionary<string, AudioSource> loopingSoundClips;
+    [SerializeField] private Dictionary<string, AudioSource> soundClips;
 
     private void Start()
     {
-        loopingSoundClips = new Dictionary<string, AudioSource>();
+        soundClips = new Dictionary<string, AudioSource>();
     }
 
     private void Awake()
@@ -21,7 +21,7 @@ public class SoundManager : MonoBehaviour
         instance = this;
     }
 
-    public void PlaySoundClip(AudioClip clip, Transform spawnTransform, bool bFade = false, float fadeTime = 0.5f, float volume = 1f)
+    public AudioSource PlaySoundClip(AudioClip clip, Transform spawnTransform, bool bFade = false, float fadeTime = 0.5f, float volume = 1f)
     {
         // create sound object
         AudioSource source = Instantiate(soundObject, spawnTransform.position, Quaternion.identity);
@@ -42,13 +42,14 @@ public class SoundManager : MonoBehaviour
 
         // destroy sound object
         Destroy(source.gameObject, source.clip.length);
+        return source;
     }
 
     public void PlayLoopingSoundClip(string name, AudioClip clip, Transform spawnTransform, bool bFade = false, float fadeTime = 0.5f, float volume = 1f)
     {
         // create sound object
         AudioSource source = Instantiate(soundObject, spawnTransform.position, Quaternion.identity);
-        loopingSoundClips.Add(name, source);
+        soundClips.Add(name, source);
 
         // play sound
         source.clip = clip;
@@ -66,10 +67,10 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public AudioSource GetLoopingSoundClip(string name)
+    public AudioSource GetSoundClip(string name)
     {
         AudioSource source;
-        loopingSoundClips.TryGetValue(name, out source);
+        soundClips.TryGetValue(name, out source);
 
         return source;
     }
@@ -78,10 +79,10 @@ public class SoundManager : MonoBehaviour
     {
         // get sound from looping sounds
         AudioSource source;
-        loopingSoundClips.TryGetValue(name, out source);
+        soundClips.TryGetValue(name, out source);
 
         // remove sound
-        loopingSoundClips.Remove(name);
+        soundClips.Remove(name);
 
         if (bFade) StartCoroutine(FadeOut(source, fadeTime, 0, true));
         else
