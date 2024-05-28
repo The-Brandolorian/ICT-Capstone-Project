@@ -19,7 +19,7 @@ Material:
   - _NORMALMAP
   - _WINDQUALITY_NONE
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -96,7 +96,7 @@ Material:
     - _BillboardShadowFade: 0.89
     - _BumpScale: 1
     - _Cull: 2
-    - _Cutoff: 0.8
+    - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 0.1
@@ -123,7 +123,7 @@ Material:
     - _WindQuality: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.69161034, g: 0.735849, b: 0.57271266, a: 1}
+    - _Color: {r: 0.4916826, g: 0.5566038, b: 0.33343717, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
