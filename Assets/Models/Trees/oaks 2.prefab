@@ -136,12 +136,12 @@ LODGroup:
     renderers:
     - renderer: {fileID: 282712148864198411}
     - renderer: {fileID: 6327597849311091806}
-  - screenRelativeHeight: 0.014275849
+  - screenRelativeHeight: 0.038553078
     fadeTransitionWidth: 0.47
     renderers:
     - renderer: {fileID: 6327597849311091806}
     - renderer: {fileID: 282712148864198411}
-  - screenRelativeHeight: 0.0024796743
+  - screenRelativeHeight: 0.016332425
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6327597849311091806}
