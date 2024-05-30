@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Splines;
 
 public class PlayerControls : MonoBehaviour
@@ -8,7 +9,6 @@ public class PlayerControls : MonoBehaviour
     [Header("Controls")]
     [SerializeField] private bool bEngineIsOn = false;
     [SerializeField] private bool bLightsAreOn = false;
-    [SerializeField] private bool bSoundingHorn = false;
     [SerializeField] private bool bIsBreaking = false;
     [SerializeField] private bool bForcedBraking = false;
     [SerializeField] private bool bDevMode = false;
@@ -37,6 +37,8 @@ public class PlayerControls : MonoBehaviour
     private float startingBrakingSpeed;
     private Light[] lights;
     private float hornWaitTime;
+    private AudioSource breakingSource;
+    private bool bPlayingRailSound = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -69,6 +71,14 @@ public class PlayerControls : MonoBehaviour
             // move based on current speed
             spline.ElapsedTime += speed;
         }
+
+        // no longer moving
+        if (speed <= 0)
+        {
+            if (breakingSource && breakingSource.isPlaying) breakingSource.Stop();
+            if (bPlayingRailSound) SoundManager.instance.StopLoopingSoundClip("rail", true);
+            bPlayingRailSound = false;
+        }
     }
 
     private void GetPlayerInput()
@@ -85,38 +95,57 @@ public class PlayerControls : MonoBehaviour
         // movement controls
         if (Input.GetKey(KeyCode.W) && bEngineIsOn && !bForcedBraking)
         {
+            // reset braking
             brakingSpeed = startingBrakingSpeed;
+            bIsBreaking = false;
 
+            // calculate speed
             acceleration = Mathf.Min(acceleration + startingAcceleration * accelerationFactor, maximumAcceleration);
             speed = Mathf.Min(speed + acceleration * Time.deltaTime, maximumSpeed);
 
-            if (SoundManager.instance.GetLoopingSoundClip("rail") == null) SoundManager.instance.PlayLoopingSoundClip("rail", railSoundClip, transform, true, 0.5f, 0.25f);
+            // play rail sound if not already
+            if (!bPlayingRailSound && SoundManager.instance.GetSoundClip("rail") == null)
+            {
+                SoundManager.instance.PlayLoopingSoundClip("rail", railSoundClip, transform, true, 0.5f, 0.1f);
+                bPlayingRailSound = !bPlayingRailSound;
+            }
 
-            AudioSource engineSource = SoundManager.instance.GetLoopingSoundClip("engine");
-            engineSource.volume = Mathf.Min(engineSource.volume + speed / 100, 0.6f);
+            // increase volumes
+            AudioSource engineSource = SoundManager.instance.GetSoundClip("engine");
+            engineSource.volume = Mathf.Min(engineSource.volume + speed / 100, 0.2f);
 
-            AudioSource railSource = SoundManager.instance.GetLoopingSoundClip("rail");
+            AudioSource railSource = SoundManager.instance.GetSoundClip("rail");
             railSource.volume = Mathf.Min(railSource.volume + speed / 100, 1f);
         }
 
         if (Input.GetKey(KeyCode.S) || bForcedBraking)
         {
+            // reset acceleration
             acceleration = startingAcceleration;
 
+            // calculate speed
             brakingSpeed = Mathf.Min(brakingSpeed + startingBrakingSpeed * brakingFactor, maximumBrakingSpeed);
             speed = Mathf.Max(speed - brakingSpeed * Time.deltaTime, 0);
 
+            // initiate breaking
             if (!bIsBreaking)
             {
-                SoundManager.instance.PlaySoundClip(breakingSoundClip, transform, true, 0.7f);
+                breakingSource = SoundManager.instance.PlaySoundClip(breakingSoundClip, transform);
                 bIsBreaking = !bIsBreaking;
             }
 
-            AudioSource source = SoundManager.instance.GetLoopingSoundClip("engine");
-            source.volume = Mathf.Max(source.volume - speed / 75, 0.25f);
+            // decrease volumes
+            if (bEngineIsOn)
+            {
+                AudioSource source = SoundManager.instance.GetSoundClip("engine");
+                source.volume = Mathf.Max(source.volume - speed / 75, 0.25f);
+            }
 
-            AudioSource railSource = SoundManager.instance.GetLoopingSoundClip("rail");
-            railSource.volume = Mathf.Min(railSource.volume - speed / 100, 1f);
+            if (bPlayingRailSound)
+            {
+                AudioSource railSource = SoundManager.instance.GetSoundClip("rail");
+                railSource.volume = Mathf.Min(railSource.volume - speed / 100, 1f);
+            }
         }
     }
 
@@ -125,7 +154,7 @@ public class PlayerControls : MonoBehaviour
         bEngineIsOn = !bEngineIsOn;
 
         if (bEngineIsOn)
-            SoundManager.instance.PlayLoopingSoundClip("engine", engineSoundClip, transform, true, 1f, 0.25f);
+            SoundManager.instance.PlayLoopingSoundClip("engine", engineSoundClip, transform, true, 1f, 0.01f);
 
         else
             SoundManager.instance.StopLoopingSoundClip("engine", true, 0.7f);
@@ -157,14 +186,6 @@ public class PlayerControls : MonoBehaviour
 
     private void Reset()
     {
-        if (bEngineIsOn) ToggleEngine();
-        if (bLightsAreOn) ToggleLights();
-        if (bSoundingHorn) SoundHorn();
-        if (bForcedBraking) ToggleForcedBraking();
-
-        spline.ElapsedTime = 0;
-        speed = 0;
-        acceleration = startingAcceleration;
-        brakingSpeed = startingBrakingSpeed;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
