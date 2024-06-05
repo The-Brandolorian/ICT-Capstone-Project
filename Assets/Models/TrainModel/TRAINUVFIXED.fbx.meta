@@ -3,7 +3,12 @@ guid: 711fd8cbe699fb942b89b6d3b4681f8a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TrainColour
+    second: {fileID: 2100000, guid: f2d34928f2915df46806e989e300f41c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
