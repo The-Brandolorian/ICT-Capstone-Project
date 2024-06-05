@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7167882657410118141
 Transform:
@@ -98,7 +98,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5651636750295963734
 Transform:
@@ -131,17 +131,17 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.39138263
+  - screenRelativeHeight: 0.46613592
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3957814019307005656}
     - renderer: {fileID: 4873725482395010787}
-  - screenRelativeHeight: 0.043135304
+  - screenRelativeHeight: 0.1505979
     fadeTransitionWidth: 0.52
     renderers:
     - renderer: {fileID: 4873725482395010787}
     - renderer: {fileID: 3957814019307005656}
-  - screenRelativeHeight: 0.01783891
+  - screenRelativeHeight: 0.05175836
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4873725482395010787}
@@ -162,7 +162,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4986653236790312552
 Transform:
