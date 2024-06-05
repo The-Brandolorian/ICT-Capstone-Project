@@ -78,10 +78,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 81fe0c5ee4f34ea46a2a2e97d2918490,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 81fe0c5ee4f34ea46a2a2e97d2918490,
         type: 3}
       propertyPath: m_Name
       value: MetalPurpleBin Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 81fe0c5ee4f34ea46a2a2e97d2918490,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
