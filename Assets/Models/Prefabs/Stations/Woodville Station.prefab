@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4355209034293382716
 Transform:
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 38119750515820128}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.92047364, z: -0, w: -0.39080453}
-  m_LocalPosition: {x: -25.92, y: -0.29999924, z: -12.74}
+  m_LocalPosition: {x: -25.92, y: -0.68, z: -12.74}
   m_LocalScale: {x: 0.39999998, y: 0.4, z: 0.39999998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -100,7 +100,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &6159180413331227281
 Transform:
@@ -184,7 +184,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4770114224876607413
 Transform:
@@ -231,6 +231,89 @@ MeshRenderer:
   m_Materials:
   - {fileID: -6478536213147159724, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
   - {fileID: -876546973899608171, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &261938868253573005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992273784097847382}
+  - component: {fileID: 4818922485169913073}
+  - component: {fileID: 6327137339254592580}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &992273784097847382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261938868253573005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.23895083, y: -0.34125724, z: 0.521433, w: -0.7446836}
+  m_LocalPosition: {x: -11.87, y: 3.319, z: 5.5}
+  m_LocalScale: {x: 0.49999997, y: 0.029109856, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1409769971489645833}
+  m_LocalEulerAnglesHint: {x: 0, y: 409.24, z: -70}
+--- !u!33 &4818922485169913073
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261938868253573005}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &6327137339254592580
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261938868253573005}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -674,6 +757,89 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &422129989762714086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2809405501270077671}
+  - component: {fileID: 9015947937791096093}
+  - component: {fileID: 5718612768510977287}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &2809405501270077671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422129989762714086}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.24130243, y: 0.34461543, z: -0.520349, w: 0.74313545}
+  m_LocalPosition: {x: 7.13, y: 3.319, z: 20.06}
+  m_LocalScale: {x: 0.49999997, y: 0.029109854, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8863938797788036041}
+  m_LocalEulerAnglesHint: {x: 0, y: 49.757, z: -70}
+--- !u!33 &9015947937791096093
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422129989762714086}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &5718612768510977287
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422129989762714086}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &727522373919118934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,89 +1193,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1323392703188425125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5512712126538312855}
-  - component: {fileID: 5546781945987986945}
-  - component: {fileID: 8493512415834175474}
-  m_Layer: 0
-  m_Name: barred metal chair Variant (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &5512712126538312855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323392703188425125}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.23614901, y: 0.3372546, z: -0.5227074, w: 0.74650514}
-  m_LocalPosition: {x: -6.11, y: 2.849001, z: 11.68}
-  m_LocalScale: {x: 0.3000001, y: 0.017465916, z: 0.03995075}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1409769971489645833}
-  m_LocalEulerAnglesHint: {x: 0, y: 48.625, z: -70}
---- !u!33 &5546781945987986945
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323392703188425125}
-  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
---- !u!23 &8493512415834175474
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323392703188425125}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1485917115163902263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1562,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8226480154559507198
 Transform:
@@ -1574,8 +1657,8 @@ Transform:
   m_GameObject: {fileID: 1761903004231786660}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4165489, z: -0, w: 0.9091133}
-  m_LocalPosition: {x: -1.48, y: 2.7530003, z: 15.49}
-  m_LocalScale: {x: 0.39999995, y: 0.6517354, z: 0.42497796}
+  m_LocalPosition: {x: -1.48, y: 3.07, z: 15.49}
+  m_LocalScale: {x: 0.6, y: 0.9776034, z: 0.6374671}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1409769971489645833}
@@ -1657,8 +1740,8 @@ Transform:
   m_GameObject: {fileID: 1787598482857883961}
   serializedVersion: 2
   m_LocalRotation: {x: -0.24130243, y: 0.34461543, z: -0.520349, w: 0.74313545}
-  m_LocalPosition: {x: -10.619, y: 2.842, z: 6.638}
-  m_LocalScale: {x: 0.3000001, y: 0.01746592, z: 0.03995077}
+  m_LocalPosition: {x: -3.27, y: 3.319, z: 11.29}
+  m_LocalScale: {x: 0.49999997, y: 0.029109854, z: 0.06658459}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8863938797788036041}
@@ -1729,7 +1812,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &952546738950728917
 Transform:
@@ -1813,7 +1896,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8213237437840664514
 Transform:
@@ -1845,6 +1928,90 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2296276264585926331}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6478536213147159724, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+  - {fileID: -876546973899608171, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2353821091992886088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2728343084822138430}
+  - component: {fileID: 9219044895635267665}
+  - component: {fileID: 2417212499343283591}
+  m_Layer: 0
+  m_Name: fence post and chainlink fence 1 Post BRAND NEW  (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &2728343084822138430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353821091992886088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.42313227, z: 0, w: 0.90606797}
+  m_LocalPosition: {x: 21.831, y: 3.2609997, z: 31.004}
+  m_LocalScale: {x: 0.15000004, y: 0.11207442, z: 0.18572357}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8863938797788036041}
+  m_LocalEulerAnglesHint: {x: 0, y: 50.065, z: 0}
+--- !u!33 &9219044895635267665
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353821091992886088}
+  m_Mesh: {fileID: 4493585093827132993, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+--- !u!23 &2417212499343283591
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353821091992886088}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -2319,7 +2486,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &6021389684460843617
 Transform:
@@ -2414,8 +2581,8 @@ Transform:
   m_GameObject: {fileID: 3528068345071308263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.42551255, z: -0, w: 0.9049525}
-  m_LocalPosition: {x: -6.04, y: 2.7530003, z: 9.43}
-  m_LocalScale: {x: 0.40000004, y: 0.6517354, z: 0.42497802}
+  m_LocalPosition: {x: -6.04, y: 3.07, z: 9.43}
+  m_LocalScale: {x: 0.6, y: 0.9776031, z: 0.63746697}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8863938797788036041}
@@ -2497,8 +2664,8 @@ Transform:
   m_GameObject: {fileID: 3531988712796178879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.42551255, z: -0, w: 0.9049525}
-  m_LocalPosition: {x: 13.07, y: 2.7530003, z: 25.81}
-  m_LocalScale: {x: 0.40000004, y: 0.6517354, z: 0.42497802}
+  m_LocalPosition: {x: 13.07, y: 3.07, z: 25.81}
+  m_LocalScale: {x: 0.6, y: 0.9776031, z: 0.63746697}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8863938797788036041}
@@ -2569,7 +2736,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &3121867686953254253
 Transform:
@@ -2580,7 +2747,7 @@ Transform:
   m_GameObject: {fileID: 3589629716748450458}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9078264, z: -0, w: -0.4193463}
-  m_LocalPosition: {x: -16.55, y: -0.29999924, z: -4.26}
+  m_LocalPosition: {x: -16.55, y: -0.68, z: -4.26}
   m_LocalScale: {x: 0.39999998, y: 0.4, z: 0.39999998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2671,89 +2838,6 @@ Transform:
   - {fileID: 1445293968542858558}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -15.994, z: 0}
---- !u!1 &3723692903757484083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8490905804264168292}
-  - component: {fileID: 5095643290217006718}
-  - component: {fileID: 5511392468772464687}
-  m_Layer: 0
-  m_Name: barred metal chair Variant (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &8490905804264168292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3723692903757484083}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.23614901, y: 0.3372546, z: -0.5227074, w: 0.74650514}
-  m_LocalPosition: {x: -21.34, y: 2.51, z: -1.37}
-  m_LocalScale: {x: 0.3000001, y: 0.017465916, z: 0.03995075}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1409769971489645833}
-  m_LocalEulerAnglesHint: {x: 0, y: 48.625, z: -70}
---- !u!33 &5095643290217006718
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3723692903757484083}
-  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
---- !u!23 &5511392468772464687
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3723692903757484083}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3768367668536315675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,8 +2865,8 @@ Transform:
   m_GameObject: {fileID: 3768367668536315675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4165489, z: -0, w: 0.9091133}
-  m_LocalPosition: {x: -23.06, y: 2.7530003, z: -3.52}
-  m_LocalScale: {x: 0.39999995, y: 0.6517354, z: 0.42497796}
+  m_LocalPosition: {x: -23.06, y: 3.07, z: -3.52}
+  m_LocalScale: {x: 0.6, y: 0.9776034, z: 0.6374671}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1409769971489645833}
@@ -2837,6 +2921,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3878608574019974205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7511698028096772331}
+  - component: {fileID: 8782224928373958487}
+  - component: {fileID: 6242716312375553494}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &7511698028096772331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878608574019974205}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.24130243, y: 0.34461543, z: -0.520349, w: 0.74313545}
+  m_LocalPosition: {x: 3.7, y: 3.319, z: 17.17}
+  m_LocalScale: {x: 0.49999997, y: 0.029109854, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8863938797788036041}
+  m_LocalEulerAnglesHint: {x: 0, y: 49.757, z: -70}
+--- !u!33 &8782224928373958487
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878608574019974205}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &6242716312375553494
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878608574019974205}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3930420444555245562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,7 +3020,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2034758809703824930
 Transform:
@@ -3290,7 +3457,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2017939604224860938
 Transform:
@@ -4133,89 +4300,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &4539338547843092300
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6721885202429619127}
-  - component: {fileID: 8516500634010851089}
-  - component: {fileID: 5890180161599741493}
-  m_Layer: 0
-  m_Name: barred metal chair Variant (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &6721885202429619127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539338547843092300}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.24130243, y: 0.34461543, z: -0.520349, w: 0.74313545}
-  m_LocalPosition: {x: 15.37, y: 2.85, z: 27.99}
-  m_LocalScale: {x: 0.3000001, y: 0.01746592, z: 0.03995077}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 8863938797788036041}
-  m_LocalEulerAnglesHint: {x: 0, y: 49.757, z: -70}
---- !u!33 &8516500634010851089
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539338547843092300}
-  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
---- !u!23 &5890180161599741493
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539338547843092300}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4683145459934792046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4232,7 +4316,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &6126872160253460983
 Transform:
@@ -4316,7 +4400,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &461885587460511007
 Transform:
@@ -4400,7 +4484,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &7438245634387924241
 Transform:
@@ -4821,6 +4905,89 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &5741297064440999712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8549909894879820535}
+  - component: {fileID: 2817373988660543451}
+  - component: {fileID: 8966017369786188595}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &8549909894879820535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741297064440999712}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.24130243, y: 0.34461543, z: -0.520349, w: 0.74313545}
+  m_LocalPosition: {x: 0.18, y: 3.319, z: 14.22}
+  m_LocalScale: {x: 0.49999997, y: 0.029109854, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8863938797788036041}
+  m_LocalEulerAnglesHint: {x: 0, y: 49.757, z: -70}
+--- !u!33 &2817373988660543451
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741297064440999712}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &8966017369786188595
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741297064440999712}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5773171697341221194
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,7 +5004,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &3387265201863799675
 Transform:
@@ -4848,7 +5015,7 @@ Transform:
   m_GameObject: {fileID: 5773171697341221194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9078264, z: -0, w: -0.4193463}
-  m_LocalPosition: {x: -21.34, y: -0.29999924, z: -8.34}
+  m_LocalPosition: {x: -21.34, y: -0.68, z: -8.34}
   m_LocalScale: {x: 0.39999998, y: 0.4, z: 0.39999998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4905,6 +5072,172 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5834813424209036765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8883080815673105931}
+  - component: {fileID: 7671219526827164410}
+  - component: {fileID: 5314706288486782464}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &8883080815673105931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834813424209036765}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.23895083, y: -0.34125724, z: 0.521433, w: -0.7446836}
+  m_LocalPosition: {x: -20.67, y: 3.319, z: -1.13}
+  m_LocalScale: {x: 0.49999997, y: 0.029109856, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1409769971489645833}
+  m_LocalEulerAnglesHint: {x: 0, y: 409.24, z: -70}
+--- !u!33 &7671219526827164410
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834813424209036765}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &5314706288486782464
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834813424209036765}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6153263528346528468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266149249788597967}
+  - component: {fileID: 4113404137350365752}
+  - component: {fileID: 7734273995601214003}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &1266149249788597967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153263528346528468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.23895083, y: -0.34125724, z: 0.521433, w: -0.7446836}
+  m_LocalPosition: {x: -6.79, y: 3.319, z: 11.32}
+  m_LocalScale: {x: 0.49999997, y: 0.029109856, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1409769971489645833}
+  m_LocalEulerAnglesHint: {x: 0, y: 409.24, z: -70}
+--- !u!33 &4113404137350365752
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153263528346528468}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &7734273995601214003
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153263528346528468}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6267851706720657979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,7 +5254,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &599614630965158281
 Transform:
@@ -5358,7 +5691,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &5386190005694312240
 Transform:
@@ -5442,7 +5775,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4956987607102453025
 Transform:
@@ -5510,6 +5843,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8053080615339910490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3677540102335073900}
+  - component: {fileID: 7710564863600956523}
+  - component: {fileID: 6485526030826557010}
+  m_Layer: 0
+  m_Name: barred metal chair Variant (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &3677540102335073900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053080615339910490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.23895083, y: -0.34125724, z: 0.521433, w: -0.7446836}
+  m_LocalPosition: {x: -15.35, y: 3.319, z: 2.41}
+  m_LocalScale: {x: 0.49999997, y: 0.029109856, z: 0.06658459}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1409769971489645833}
+  m_LocalEulerAnglesHint: {x: 0, y: 409.24, z: -70}
+--- !u!33 &7710564863600956523
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053080615339910490}
+  m_Mesh: {fileID: 3007621949498483852, guid: cd476eb4d10b9a84db0503869de841ef, type: 3}
+--- !u!23 &6485526030826557010
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053080615339910490}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a7094c09c542e1469ce9e4d66193431, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8243760562726484259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,7 +5942,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4425999909119751367
 Transform:
@@ -6047,8 +6463,6 @@ Transform:
   m_Children:
   - {fileID: 4652503792648645114}
   - {fileID: 5945739530286424667}
-  - {fileID: 8490905804264168292}
-  - {fileID: 5512712126538312855}
   - {fileID: 5141485149689824126}
   - {fileID: 857214292016998475}
   - {fileID: 871315849703846027}
@@ -6064,6 +6478,11 @@ Transform:
   - {fileID: 599614630965158281}
   - {fileID: 4425999909119751367}
   - {fileID: 1316653712403245112}
+  - {fileID: 1266149249788597967}
+  - {fileID: 992273784097847382}
+  - {fileID: 3677540102335073900}
+  - {fileID: 8883080815673105931}
+  - {fileID: 1575721269884872394}
   m_Father: {fileID: 1618718304847104014}
   m_LocalEulerAnglesHint: {x: 0, y: 180.219, z: 0}
 --- !u!1 &8694169180747512168
@@ -6082,7 +6501,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1123904052234037700
 Transform:
@@ -6093,7 +6512,7 @@ Transform:
   m_GameObject: {fileID: 8694169180747512168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.42319426, z: -0, w: 0.906039}
-  m_LocalPosition: {x: 9.1682205, y: -0.6800003, z: 18.795103}
+  m_LocalPosition: {x: 9.1682205, y: -0.612, z: 18.795103}
   m_LocalScale: {x: 0.39999992, y: 0.4, z: 0.39999992}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6166,7 +6585,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &7514216325770049600
 Transform:
@@ -6250,7 +6669,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &7700369967558392796
 Transform:
@@ -6261,7 +6680,7 @@ Transform:
   m_GameObject: {fileID: 8977302943698159053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9369577, z: -0, w: 0.34944284}
-  m_LocalPosition: {x: -11.61, y: -0.29999924, z: -0.04}
+  m_LocalPosition: {x: -11.61, y: -0.68, z: -0.04}
   m_LocalScale: {x: 0.39999998, y: 0.4, z: 0.39999998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6334,7 +6753,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &6978432642431723213
 Transform:
@@ -6366,6 +6785,90 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8978399979670853488}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6478536213147159724, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+  - {fileID: -876546973899608171, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &9037015005618620310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575721269884872394}
+  - component: {fileID: 5670638668391555300}
+  - component: {fileID: 8221588425943219746}
+  m_Layer: 0
+  m_Name: fence post and chainlink fence 1 Post BRAND NEW  (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!4 &1575721269884872394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037015005618620310}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.4190352, z: -0, w: 0.90797}
+  m_LocalPosition: {x: -25.02, y: 3.2609997, z: -7.518}
+  m_LocalScale: {x: 0.15, y: 0.11207442, z: 0.1857236}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1409769971489645833}
+  m_LocalEulerAnglesHint: {x: 0, y: 230.065, z: 0}
+--- !u!33 &5670638668391555300
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037015005618620310}
+  m_Mesh: {fileID: 4493585093827132993, guid: 72d25ab8d4a3c7242af4c69c91e9f81f, type: 3}
+--- !u!23 &8221588425943219746
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037015005618620310}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -6434,7 +6937,9 @@ Transform:
   - {fileID: 8373242888836590199}
   - {fileID: 1807098425887075902}
   - {fileID: 7780740078737670274}
-  - {fileID: 6721885202429619127}
+  - {fileID: 8549909894879820535}
+  - {fileID: 7511698028096772331}
+  - {fileID: 2809405501270077671}
   - {fileID: 190546494225778257}
   - {fileID: 6555979624421699576}
   - {fileID: 5137663248067172980}
@@ -6445,6 +6950,7 @@ Transform:
   - {fileID: 3387265201863799675}
   - {fileID: 4355209034293382716}
   - {fileID: 5386190005694312240}
+  - {fileID: 2728343084822138430}
   - {fileID: 7438245634387924241}
   - {fileID: 6978432642431723213}
   - {fileID: 7514216325770049600}
@@ -6470,6 +6976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Red and White shelter with chair (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1473591922711872144, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6483,7 +6994,7 @@ PrefabInstance:
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.01
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
@@ -6493,7 +7004,7 @@ PrefabInstance:
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.22
+      value: 19.85
       objectReference: {fileID: 0}
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
@@ -6553,6 +7064,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Large Red and White shelter with chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473591922711872144, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
@@ -6614,6 +7130,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2924889161215186831, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6838497205588725849, guid: 038fa170c13a8a44798e0d60fd7d24c7,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6637,6 +7159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Large Red and White shelter with chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473591922711872144, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
@@ -6698,6 +7225,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2924889161215186831, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6838497205588725849, guid: 038fa170c13a8a44798e0d60fd7d24c7,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6721,6 +7254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Large Red and White shelter with chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473591922711872144, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2249707061939017770, guid: e664736924fae8a4cb255d6a7db3d5a4,
         type: 3}
@@ -6782,6 +7320,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2924889161215186831, guid: e664736924fae8a4cb255d6a7db3d5a4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6838497205588725849, guid: 038fa170c13a8a44798e0d60fd7d24c7,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
