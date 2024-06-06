@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023841816232238505}
   m_Layer: 0
-  m_Name: House
+  m_Name: House 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8000001, y: 0.8000001, z: 0.8000001}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4322890539465241880}
@@ -168,7 +168,7 @@ Transform:
   m_GameObject: {fileID: 1635117862849221506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.366, y: 6.29, z: 10.461}
+  m_LocalPosition: {x: 0.366, y: 6.35, z: 10.461}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -473,7 +473,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: abd528ad4e72a0847a64f31823f5e6f6, type: 2}
+  - {fileID: 2100000, guid: 601a84ca37aed26489d519e277dfe210, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
