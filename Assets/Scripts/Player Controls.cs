@@ -88,6 +88,7 @@ public class PlayerControls : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L)) ToggleLights();
         if (Input.GetKeyDown(KeyCode.H)) SoundHorn();
         if (Input.GetKeyDown(KeyCode.R)) Reset();
+        if (Input.GetKeyDown(KeyCode.Escape)) Exit();
 
         // dev controls
         if (Input.GetKeyDown(KeyCode.B) && bDevMode) ToggleForcedBraking();
@@ -186,6 +187,11 @@ public class PlayerControls : MonoBehaviour
 
     private void Reset()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
+    }
+
+    private void Exit()
+    {
+        SceneManager.LoadScene(0);
     }
 }
