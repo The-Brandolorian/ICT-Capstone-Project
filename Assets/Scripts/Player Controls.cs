@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Splines;
@@ -32,6 +34,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private AudioClip engineSoundClip;
     [SerializeField] private AudioClip breakingSoundClip;
     [SerializeField] private AudioClip railSoundClip;
+    [SerializeField] private AudioClip doorSoundClip;
 
     private float startingAcceleration;
     private float startingBrakingSpeed;
@@ -75,7 +78,7 @@ public class PlayerControls : MonoBehaviour
         // no longer moving
         if (speed <= 0)
         {
-            if (breakingSource && breakingSource.isPlaying) breakingSource.Stop();
+            if (breakingSource != null && breakingSource.isPlaying) breakingSource.Stop();
             if (bPlayingRailSound) SoundManager.instance.StopLoopingSoundClip("rail", true);
             bPlayingRailSound = false;
         }
@@ -180,9 +183,10 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    private void ToggleForcedBraking()
+    public void ToggleForcedBraking()
     {
         bForcedBraking = !bForcedBraking;
+        StartCoroutine(StationStop(this));
     }
 
     private void Reset()
@@ -193,5 +197,21 @@ public class PlayerControls : MonoBehaviour
     private void Exit()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public static IEnumerator StationStop(PlayerControls player)
+    {
+        while(player.speed > 0)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(2);
+
+        SoundManager.instance.PlaySoundClip(player.doorSoundClip, player.transform);
+
+        yield return new WaitForSeconds(player.doorSoundClip.length);
+
+        player.ToggleForcedBraking();
     }
 }
