@@ -13,6 +13,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private bool bLightsAreOn = false;
     [SerializeField] private bool bIsBreaking = false;
     [SerializeField] private bool bForcedBraking = false;
+    [SerializeField] private bool bStoppingAtStation = false;
     [SerializeField] private bool bDevMode = false;
 
     [Header("Movement")]
@@ -78,7 +79,6 @@ public class PlayerControls : MonoBehaviour
         // no longer moving
         if (speed <= 0)
         {
-            if (breakingSource != null && breakingSource.isPlaying) breakingSource.Stop();
             if (bPlayingRailSound) SoundManager.instance.StopLoopingSoundClip("rail", true);
             bPlayingRailSound = false;
         }
@@ -129,12 +129,17 @@ public class PlayerControls : MonoBehaviour
 
             // calculate speed
             brakingSpeed = Mathf.Min(brakingSpeed + startingBrakingSpeed * brakingFactor, maximumBrakingSpeed);
-            speed = Mathf.Max(speed - brakingSpeed * Time.deltaTime, 0);
+            speed = (bForcedBraking && !bStoppingAtStation) ? Mathf.Max(speed - brakingSpeed * Time.deltaTime, 0.2f) : Mathf.Max(speed - brakingSpeed * Time.deltaTime, 0);
 
             // initiate breaking
             if (!bIsBreaking)
             {
-                breakingSource = SoundManager.instance.PlaySoundClip(breakingSoundClip, transform);
+                if (breakingSource != null && !breakingSource.isPlaying)
+                {
+                    breakingSource.time = 0f;
+                    breakingSource.Play();
+                }
+                else breakingSource = SoundManager.instance.PlaySoundClip(breakingSoundClip, transform);
                 bIsBreaking = !bIsBreaking;
             }
 
@@ -150,6 +155,16 @@ public class PlayerControls : MonoBehaviour
                 AudioSource railSource = SoundManager.instance.GetSoundClip("rail");
                 railSource.volume = Mathf.Min(railSource.volume - speed / 100, 1f);
             }
+
+            if (breakingSource != null && breakingSource.isPlaying)
+            {
+                breakingSource.volume = Mathf.Min(breakingSource.volume - speed / 100, 1f);
+            }
+        }
+        else if (bIsBreaking)
+        {
+            bIsBreaking = !bIsBreaking;
+            if (breakingSource != null && breakingSource.isPlaying) breakingSource.Stop();
         }
     }
 
@@ -186,6 +201,10 @@ public class PlayerControls : MonoBehaviour
     public void ToggleForcedBraking()
     {
         bForcedBraking = !bForcedBraking;
+    }
+
+    public void DoStationStop()
+    {
         StartCoroutine(StationStop(this));
     }
 
@@ -199,12 +218,11 @@ public class PlayerControls : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public static IEnumerator StationStop(PlayerControls player)
+    private static IEnumerator StationStop(PlayerControls player)
     {
-        while(player.speed > 0)
-        {
-            yield return null;
-        }
+        player.bStoppingAtStation = !player.bStoppingAtStation;
+
+        while (player.speed > 0) { yield return null; }
 
         yield return new WaitForSeconds(2);
 
@@ -212,6 +230,7 @@ public class PlayerControls : MonoBehaviour
 
         yield return new WaitForSeconds(player.doorSoundClip.length);
 
-        player.ToggleForcedBraking();
+        player.bForcedBraking = !player.bForcedBraking;
+        player.bStoppingAtStation = !player.bStoppingAtStation;
     }
 }

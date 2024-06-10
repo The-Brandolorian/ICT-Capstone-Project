@@ -13,4 +13,9 @@ public class ForceBraking : MonoBehaviour
     {
         player.ToggleForcedBraking();
     }
+
+    private void OnTriggerExit(Collider collider)
+    {
+        player.DoStationStop();
+    }
 }
