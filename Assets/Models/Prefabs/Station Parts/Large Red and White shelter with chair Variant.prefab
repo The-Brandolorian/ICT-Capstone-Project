@@ -83,6 +83,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Red and White shelter with chair Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e346e03a4fb5bbd48aa55e477e13730c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e346e03a4fb5bbd48aa55e477e13730c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
