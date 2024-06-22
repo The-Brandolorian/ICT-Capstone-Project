@@ -1,5 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Enumeration;
+using System.Runtime.Serialization;
+using System.Xml.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -19,15 +24,15 @@ public class PlayerControls : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private SplineAnimate spline;
     [SerializeField] private float speed = 0;
-    [SerializeField] private float maximumSpeed = 0.5f;
+    [SerializeField] private float maximumSpeed = 0.4f;
 
-    [SerializeField] private float acceleration = 0.01f;
-    [SerializeField] private float maximumAcceleration = 1f;
+    [SerializeField] private float acceleration = 0.02f;
+    [SerializeField] private float maximumAcceleration = 0.05f;
     [SerializeField] private float accelerationFactor = 0.01f;
 
     [SerializeField] private float brakingSpeed = 0.05f;
     [SerializeField] private float maximumBrakingSpeed = 0.25f;
-    [SerializeField] private float brakingFactor = 0.05f;
+    [SerializeField] private float brakingFactor = 0.02f;
     [SerializeField] private float gravityBreakingFactor = 0.05f;
 
     [Header("Sounds")]
@@ -37,18 +42,34 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private AudioClip railSoundClip;
     [SerializeField] private AudioClip doorSoundClip;
 
+    [Serializable] struct SettingsData
+    {
+        public float maximumSpeed;
+        public float acceleration;
+        public float maximumAcceleration;
+        public float accelerationFactor;
+        public float brakingSpeed;
+        public float maximumBrakingSpeed;
+        public float brakingFactor;
+        public float gravityBreakingFactor;
+    }
+
     private float startingAcceleration;
     private float startingBrakingSpeed;
     private Light[] lights;
     private float hornWaitTime;
     private AudioSource breakingSource;
     private bool bPlayingRailSound = false;
+    private string settingsFile = "trainsettings.json";
 
     // Start is called before the first frame update
     private void Start()
     {
         // spline to follow
         spline = GetComponentInParent<SplineAnimate>();
+
+        // train settings
+        GetSettings();
 
         // store initial values
         startingAcceleration = acceleration;
@@ -232,5 +253,39 @@ public class PlayerControls : MonoBehaviour
 
         player.bForcedBraking = !player.bForcedBraking;
         player.bStoppingAtStation = !player.bStoppingAtStation;
+    }
+
+    private void GetSettings()
+    {
+        if (File.Exists(settingsFile))
+        {
+            var data = System.IO.File.ReadAllText(settingsFile);
+            SettingsData loadedData = JsonUtility.FromJson<SettingsData>(data);
+
+            maximumSpeed = loadedData.maximumSpeed;
+            acceleration = loadedData.acceleration;
+            maximumAcceleration = loadedData.maximumAcceleration;
+            accelerationFactor = loadedData.accelerationFactor;
+            brakingSpeed = loadedData.brakingSpeed;
+            maximumBrakingSpeed = loadedData.maximumBrakingSpeed;
+            brakingFactor = loadedData.brakingFactor;
+            gravityBreakingFactor = loadedData.gravityBreakingFactor;
+        }
+        else
+        {
+            var data = new SettingsData()
+            {
+                maximumSpeed = 0.4f,
+                acceleration = 0.02f,
+                maximumAcceleration = 0.05f,
+                accelerationFactor = 0.01f,
+                brakingSpeed = 0.05f,
+                maximumBrakingSpeed = 0.25f,
+                brakingFactor = 0.02f,
+                gravityBreakingFactor = 0.05f
+            };
+            var json = JsonUtility.ToJson(data, true);
+            System.IO.File.WriteAllText(settingsFile, json);
+        }
     }
 }
